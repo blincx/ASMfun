@@ -10,9 +10,7 @@ ls18:
 	lpc r14,first
 	lhz r12,#0xFF
 	ll  r12,#0xFC
-	lhz r18,#0xFF
-	ll  r18,#0xFE
-	llz r19,#0x02
+	llz r5,#0x02
 firstfirst:
 	lpc r6,branch_table_add
 	lpc r5,backup
@@ -47,7 +45,7 @@ done:
 	stw [r7],r10
 	; check for v
 	stw [r7],r12
-	add r12,r19	
+	add r12,r5	
 	bnz r14
 	
 
