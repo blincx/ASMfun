@@ -10,4 +10,6 @@ one iteration of the branch table, which simply executes some jumps and shows th
 and 0x0000. Program terminates when counter reaches zero.
 
 lc3_recurs.asm: Runs on the LC3-sim from Dwelch (https://github.com/dwelch67/lc3)
-Uses recursion to count down from 0x00EF to zero while simultaneously performing another looped subtraction, storing both results + return addresses in a stack frame, and then terminating upon reaching zero. 
+Uses recursion to count down from 0x00EF to zero while simultaneously performing another looped subtraction, storing both results + return addresses in a stack frame, and then terminating upon reaching zero.
+
+lsa_binary.s: Performs simple binary math operations, including logical AND and XOR, looping down to zero. Runs on the LSA-sim.
